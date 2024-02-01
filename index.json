@@ -1,0 +1,402 @@
+{
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "settings": {
+    "MetapropertyDirective": "#$",
+    "PresetCategories": {
+      "TUNE": "TUNE",
+      "RATES": "RATES",
+      "OSD": "OSD",
+      "VTX": "VTX",
+      "LEDS": "LEDS",
+      "MODES": "MODES",
+      "FILTERS": "FILTERS",
+      "RC_LINK": "RC_LINK",
+      "BNF": "BNF",
+      "OTHER": "OTHER"
+    },
+    "PresetCategoriesPriorities": {
+      "TUNE": 1000000000000,
+      "RATES": 10000,
+      "OSD": 0,
+      "VTX": 1000000,
+      "LEDS": 0,
+      "MODES": 0,
+      "RC_SMOOTHING": 100000000,
+      "FILTERS": 100,
+      "RC_LINK": 10000000000,
+      "BNF": 0,
+      "OTHER": 0
+    },
+    "MetadataTypes": {
+      "STRING": "STRING",
+      "STRING_ARRAY": "STRING_ARRAY",
+      "PRESET_CATEGORY": "PRESET_CATEGORY",
+      "FILE_PATH": "FILE_PATH",
+      "BOOLEAN": "BOOLEAN",
+      "WORDS_ARRAY": "WORDS_ARRAY",
+      "FILE_PATH_ARRAY": "FILE_PATH_ARRAY",
+      "PRESET_STATUS": "PRESET_STATUS",
+      "PRIORITY": "PRIORITY",
+      "PARSER": "PARSER"
+    },
+    "OptionsDirectives": {
+      "OPTION_DIRECTIVE": "option",
+      "BEGIN_OPTION_DIRECTIVE": "option begin",
+      "END_OPTION_DIRECTIVE": "option end",
+      "OPTION_CHECKED": "(checked)",
+      "OPTION_UNCHECKED": "(unchecked)",
+      "BEGIN_OPTION_GROUP_DIRECTIVE": "option_group begin",
+      "END_OPTION_GROUP_DIRECTIVE": "option_group end"
+    },
+    "PresetStatusEnum": [
+      "OFFICIAL",
+      "COMMUNITY",
+      "EXPERIMENTAL"
+    ],
+    "ParserEnum": [
+      "TEXT",
+      "MARKED"
+    ],
+    "presetsDir": "presets",
+    "presetsFileEncoding": "utf-8",
+    "presetsFileMetadata": {
+      "title": {
+        "type": "STRING",
+        "optional": false
+      },
+      "firmware_version": {
+        "type": "STRING_ARRAY",
+        "optional": false
+      },
+      "category": {
+        "type": "PRESET_CATEGORY",
+        "optional": false
+      },
+      "status": {
+        "type": "PRESET_STATUS",
+        "optional": false
+      },
+      "author": {
+        "type": "STRING",
+        "optional": true
+      },
+      "description": {
+        "type": "STRING_ARRAY",
+        "optional": true
+      },
+      "include": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "keywords": {
+        "type": "WORDS_ARRAY",
+        "optional": true
+      },
+      "hidden": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "discussion": {
+        "type": "STRING",
+        "optional": true
+      },
+      "warning": {
+        "type": "STRING",
+        "optional": true
+      },
+      "disclaimer": {
+        "type": "STRING",
+        "optional": true
+      },
+      "include_warning": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "include_disclaimer": {
+        "type": "FILE_PATH_ARRAY",
+        "optional": true
+      },
+      "priority": {
+        "type": "PRIORITY",
+        "optional": true
+      },
+      "force_options_review": {
+        "type": "BOOLEAN",
+        "optional": true
+      },
+      "parser": {
+        "type": "PARSER",
+        "optional": true
+      }
+    }
+  },
+  "uniqueValues": {
+    "firmware_version": [
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "category": [
+      "FILTERS",
+      "RC_LINK",
+      "TUNE",
+      "VTX"
+    ],
+    "author": [
+      "Betaflight",
+      "Chris Rosser",
+      "ctzsnooze",
+      "Gonzalo Bulnes Guilpain",
+      "sugarK"
+    ],
+    "keywords": [
+      "250Hz",
+      "3.5",
+      "aos",
+      "basic",
+      "chris",
+      "clear",
+      "default",
+      "defaults",
+      "digital",
+      "divimath",
+      "ELRS",
+      "express",
+      "filter",
+      "filters",
+      "freestyle",
+      "HDzero",
+      "link",
+      "MSP VTX",
+      "pid",
+      "race v1",
+      "race v2",
+      "RC",
+      "rc link",
+      "rc_link",
+      "rc_smoothing",
+      "reset",
+      "rosser",
+      "Rx",
+      "SA 2.1",
+      "smoothing",
+      "tune",
+      "tx5m.1",
+      "vtx",
+      "vtx table",
+      "vtxtable",
+      "whoop",
+      "whoop lite"
+    ]
+  },
+  "presets": [
+    {
+      "fullPath": "presets/4.3/filters/defaults.txt",
+      "hash": "94dd6e400f67d5bde88bf5a6952c83255db887da83dcc9b247a04ffac43f9cd2",
+      "title": "Default 4.3 Filter settings",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "FILTERS",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "filter",
+        "filters",
+        "reset"
+      ],
+      "author": "Betaflight",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/defaults.txt",
+      "hash": "4b040f24c3f3ead0edae874314c02f1ad3030176876c3089c8c089f5e361eb41",
+      "title": "Reset RC related settings",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "Rx",
+        "RC",
+        "reset",
+        "rc link",
+        "rc_link",
+        "smoothing",
+        "rc_smoothing"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/rc_link/elrs_250hz.txt",
+      "hash": "11feaf5c5defdf532c33babcefb569ee12fb0588eaf94afd6eadb57e0683aa24",
+      "title": "ExpressLRS 250Hz",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/defaults_vtx_tables.txt",
+      "hash": "77b535aa6e95af50997a23c1c31db536677a83ccdfdf76e724d3522e90ac6fbf",
+      "title": "Default 4.3 VTX table settings",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "clear",
+        "vtx",
+        "vtxtable"
+      ],
+      "author": "Betaflight",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_3.5_filters.txt",
+      "hash": "3da283abc4a307009d39f256ae6ef220c3d5d6b9288e87874f02cd882c7e4a13",
+      "title": "AOS 3.5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "3.5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_3.5_tune.txt",
+      "hash": "7fbafc4e9141ca5433647ebc35835dd4d5ff24fd10988769664e47aea4beebca",
+      "title": "AOS 3.5 tune by Chris Rosser (without RC link)",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "3.5"
+      ],
+      "author": "Gonzalo Bulnes Guilpain",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/defaults.txt",
+      "hash": "913b78f0010561a8e935f951493cb4bd7313493a36a48a7b9205a69e1350524f",
+      "title": "Betaflight 4.4 TUNE defaults",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "pid",
+        "basic",
+        "default"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/vtx/HDZero.txt",
+      "hash": "6fd93edb82e8e31e4089e38aeedd8f5656374820fb28d7751ea218d9fec3fbcc",
+      "title": "HDZero VTXs",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "HDzero",
+        "divimath",
+        "SA 2.1",
+        "digital",
+        "whoop",
+        "whoop lite",
+        "race v1",
+        "race v2",
+        "freestyle",
+        "tx5m.1",
+        "MSP VTX"
+      ],
+      "author": "sugarK",
+      "force_options_review": true,
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.5/vtx/HDZero.txt",
+      "hash": "9050972b8402eddb537077960adba66b448d73d040a9c52e4b1b9867fba234b9",
+      "title": "HDZero VTXs",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "HDzero",
+        "divimath",
+        "SA 2.1",
+        "digital",
+        "whoop",
+        "whoop lite",
+        "race v1",
+        "race v2",
+        "freestyle",
+        "tx5m.1",
+        "MSP VTX"
+      ],
+      "author": "sugarK",
+      "force_options_review": true,
+      "priority": 1000000
+    }
+  ]
+}
