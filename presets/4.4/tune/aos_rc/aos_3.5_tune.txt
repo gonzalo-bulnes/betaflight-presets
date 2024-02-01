@@ -1,20 +1,20 @@
-#$ TITLE: AOS 3.5 tune by Chris Rosser
+#$ TITLE: AOS 3.5 tune by Chris Rosser (without RC link)
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: aos, chris, rosser, pid, tune, 3.5
-#$ AUTHOR: Chris Rosser
+#$ AUTHOR: Gonzalo Bulnes Guilpain
 #$ DISCUSSION: https://www.aos-rc.com
 #$ DESCRIPTION: Custom Tune for the AOS 3.5. Based on a 850mAh 4S build with 3000KV Motors.
+#$ DESCRIPTION: Originally created by Chris Rosser.
+#$ DESCRIPTION: Modified by Gonzalo Bulnes Guilpain to remove the RC link options.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Master multiplier is set to 1.25 for safety. Increase it carefully to further improve flight performance.
 #$ DESCRIPTION:
 #$ DESCRIPTION: RPM filtering is MANDATORY!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Please carefully review the options above and tick any that are relevant.
-#$ DESCRIPTION:
-#$ DESCRIPTION: Choose your RC link speed.
 #$ DESCRIPTION:
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
@@ -84,34 +84,6 @@ set dyn_idle_p_gain = 40
     #$ INCLUDE: presets/4.4/filters/aos_rc/aos_3.5_filters.txt
     #$ OPTION END
 
-#$ OPTION_GROUP END
-
-# -- Fast Rx Link Options --
-
-#$ OPTION_GROUP BEGIN: Choose your RC link (or apply another preset separately)
-    #$ OPTION BEGIN (UNCHECKED): ELRS_250HZ (Recommended)
-        #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): ELRS_500HZ
-        #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
-    #$ OPTION END
-    
-    #$ OPTION BEGIN (UNCHECKED): DJI Normal
-        #$ INCLUDE: presets/4.3/rc_link/DJI_Normal.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): DJI SBUS FAST
-        #$ INCLUDE: presets/4.3/rc_link/DJI_SBUS_Fast.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz
-        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_50hz.txt
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz
-        #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
-    #$ OPTION END
 #$ OPTION_GROUP END
 
 # -- Recommended options --
