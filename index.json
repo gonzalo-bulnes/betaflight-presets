@@ -139,6 +139,7 @@
     ],
     "category": [
       "FILTERS",
+      "RATES",
       "RC_LINK",
       "TUNE",
       "VTX"
@@ -153,6 +154,7 @@
     "keywords": [
       "250Hz",
       "3.5",
+      "actual",
       "aos",
       "basic",
       "chris",
@@ -172,6 +174,7 @@
       "pid",
       "race v1",
       "race v2",
+      "rates",
       "RC",
       "rc link",
       "rc_link",
@@ -209,6 +212,43 @@
       ],
       "author": "Betaflight",
       "priority": 100
+    },
+    {
+      "fullPath": "presets/4.3/rates/defaults.txt",
+      "hash": "b5ca502f48325e26d254127b4bc431415d127092910ac6053b00087ef5000ade",
+      "title": "Default rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/rates/personal.txt",
+      "hash": "06e490f7a2d8198d4b2487cc0383932bfee2a537681baa8dd929228b4ce6d4d2",
+      "title": "Personal rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rates",
+        "actual"
+      ],
+      "author": "Gonzalo Bulnes Guilpain",
+      "priority": 10000
     },
     {
       "fullPath": "presets/4.3/rc_link/defaults.txt",
